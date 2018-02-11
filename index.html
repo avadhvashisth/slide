@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>sliding</title>
+    <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+    
+<body>
+    
+    <span style="font-size:30px;cursor:pointer;position:fixed;display:inline-block; margin-left:10px;color:white;" onclick="openNav()">&#9776;</span>
+    <div id="nav-bar">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+    </div>
+    <div id="layer1">
+        <img src="images/1.jpg">
+        <h1>A project is <span>complete </span> when it starts working for you.</h1>
+        <!--<div class="scroll-down"><img src="images/down-arrow-red.png"></div>-->
+    </div>
+    <div id="layer2">layer2</div>
+    <script>
+        function openNav(){
+            document.getElementById("nav-bar").style.width="250px";
+            document.getElementById("layer1").style.marginLeft = "250px";
+        }
+        function closeNav(){
+            document.getElementById("nav-bar").style.width="0";
+            document.getElementById("layer1").style.marginLeft = "0";
+        }
+    
+    </script>
+</body>    
+</html>

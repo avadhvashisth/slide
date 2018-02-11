@@ -1,0 +1,132 @@
+@font-face {
+font-family: "avanl";
+src: url("fonts/AVANGELI.TTF");
+}
+
+@font-face {
+font-family: "avanm";
+src: url("fonts/AVANGMI_.TTF");
+}
+
+@font-face {
+font-family: "avanb";
+src: url("fonts/AVANGID_.TTF");
+}
+
+@font-face {
+font-family: "sun";
+src: url("fonts/Sun Valley - Demo.ttf");
+}
+html, body{
+    height: 100%;
+    margin: 0px;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+#nav-bar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#nav-bar a{
+    font-family: avanm;
+    font-size: 25px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    padding: 8px 50px 8px 0px;
+}
+
+#nav-bar a:hover{
+    color: #f1f1f1;
+}
+
+#nav-bar .closebtn{
+    position: absolute;
+    font-size: 40px;
+    padding: 0;
+    top: 0;
+    margin-left: 200px;
+}
+#layer1{
+    height: 100%;
+    width: 100%;
+    background-color: dodgerblue;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+#layer1 h1{
+    font-family: avanl;
+    margin-top: 300px;
+    width: 40%;
+    float: left;
+    color: white;
+}
+
+#layer1 h1 span{
+    font-family: sun;
+    font-size: 40px;
+}
+
+#layer1 img{
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 150px;
+}
+
+#layer2{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: skyblue;
+    text-align: center;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    animation: myScale 1s infinite;
+}
+
+.scroll-down:hover{
+    animation: none;
+}
+
+.scroll-down img{
+    width: 40px;
+}
+
+@keyframes myScale{
+    0% {bottom: 0px;}
+    35% {bottom: 15px}
+    70% {bottom: 0px;}
+    85%{bottom: 7.5px;}
+    100%{bottom: 0px;}
+}
+
+@media only screen and (max-width: 768px){
+    #layer1 img{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #layer1 h1{
+    margin-top: 20px;
+    width: 100%;
+    }
+
+}
