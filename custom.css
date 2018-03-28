@@ -24,6 +24,19 @@ html, body{
     overflow-x: hidden;
 }
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
 #nav-bar{
     height: 100%;
     width: 0;
@@ -67,6 +80,7 @@ html, body{
     position: fixed;
     right: 0;
     width: 20px;
+    z-index: 2;
 }
 
 #access-bar a{
@@ -74,7 +88,7 @@ html, body{
     margin-top: 20px;
     margin-bottom: 20px;
     text-decoration: none;
-    background-color: rgba(218,178,57,0.2);
+    background-color: rgba(218,178,57,0.7);
     color:white;
     font-weight:bolder;
     font-size: 20px;
@@ -131,16 +145,330 @@ html, body{
     height: 100%;
     width: 100%;
     margin: 0px;
-    background-color: skyblue;
-    text-align: center;
+    background-color: #E39517;
+    background-image: url(images/dark-denim-3.png);
+}
+#l2content1 h1 span{
+    font-family: sans-serif;
+}
+#l2content1 h1{
+    color: white;
+    font-family: sun;
+    font-size: 70px;
+    margin: 0px;
+    padding-top: 40%;
+    padding-left: 80px;
 }
 
+#l2content1{
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: darkslategray;
+}
+
+.rect p{
+    padding-right: 20px;
+    font-family: avanl;
+}
+.rect h1{
+    font-size: 20px;
+    font-family: avanm;
+    color: darkslategray;
+}
+.rect{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.rect img{
+    height: 50px;
+}
+.rect img:hover{
+    opacity: 0.5;
+}
+#l2content{
+    position: relative;
+    left: 30%;
+    bottom: 85%;
+    margin-bottom: -85%;
+    padding: 40px;
+    height: 60%;
+    width: 55%;
+    background-color: white;
+}
 #layer3{
     height: 100%;
     width: 100%;
     margin: 0px;
-    background-color: blue;
+    background-color: skyblue;
+    background-image: url(images/dark-denim-3.png);
     text-align: center;
+}
+#l3content1 h1 span{
+    font-family: sans-serif;
+}
+#l3content1 h1{
+    padding-top: 40%;
+    padding-left: 10%;
+    color: white;
+    font-family: sun;
+    font-size: 70px;
+    margin: 0px;
+}
+
+#l3content1{
+    margin-left: 50%;
+    padding: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: darkslategray;
+}
+
+#l3content2{
+    position: relative;
+    left: 5%;
+    bottom: 85%;
+    margin-bottom: -85%;
+    padding: 40px;
+    height: 60%;
+    width: 55%;
+    background-color: white;
+}
+
+#l3content2 p{
+    margin-top: 10%;
+    font-family: avanl;
+    font-size: 20px;
+}
+#l3content2 span{
+    color: darkslategray;
+    font-family: avanb;
+    font-size: 30px;
+}
+
+#layer4{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: rgba(218,178,57,0.7);
+    background-image: url(images/dark-denim-3.png);
+}
+
+#l4content1 h1{
+    color: white;
+    font-family: sun;
+    font-size: 70px;
+    margin: 0px;
+    padding-top: 40%;
+    padding-left: 80px;
+}
+
+#l4content1{
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: darkslategray;
+}
+
+#l4content2{
+    position: relative;
+    left: 30%;
+    bottom: 87.5%;
+    margin-bottom: -87.5%;
+    height: 75%;
+    width: 55%;
+    background-color: white;
+    text-align: center;
+}
+
+#team-image{
+    margin-top: 50px;
+    display: inline-block;
+}
+
+#team-image img{
+    height: 80%;
+}
+
+#team2{
+    position: absolute;
+    top: 50px;
+}
+
+#team-info h1{
+    margin-top: 60%;
+    color: white;
+    font-family: avanb;
+}
+
+#team-info h2{
+    color: white;
+    
+}
+
+#member1{
+    position: absolute;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(218,178,57,0.9);
+    opacity: 0;
+    transition: 1s;
+}
+#member1:hover,#member2:hover,#member3:hover,#member4:hover{
+    opacity: 1;
+}
+
+#member2{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(218,178,57,0.9);
+    opacity: 0;
+    transition: 1s;
+}
+
+#member3{
+    position: absolute;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(218,178,57,0.9);
+    opacity: 0;
+    transition: 1s;
+    display: none;
+}
+
+#member4{
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(218,178,57,0.9);
+    opacity: 0;
+    transition: 1s;
+    display: none;
+}
+#next{
+    margin-top: 50px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: avanm;
+}
+#layer5{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: #212529;
+    text-align: center;
+    background-image: url(images/map-image.png);
+}
+
+#layer5 form h1{
+    margin: 0;
+    padding-top: 50px;
+    color: white;
+    font-family: avanl;
+    font-size: 50px;
+}
+
+#layer5 form hr{
+    width: 50%;
+}
+
+#layer5 form input{
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    height: 5%;
+    border-radius: 20px;
+}
+
+#layer5 form input:focus{
+    outline-width: 0px;
+}
+
+#submit{
+    background-color: #212529;
+    font-family: monospace;
+    color: white;
+}
+
+
+#footer #left{
+    margin-top: 40px;
+    padding-bottom: 40px;
+    width: 50%;
+    float: left;
+    font-size: 20px;
+    font-family: avanl;
+    color: white;
+    background-color: #212529;
+}
+
+#footer #left p{
+    font-size: 25px;
+    margin: 0px;
+}
+
+#footer #right{
+    margin-top: 40px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    width: 50%;
+    float: right;
+    background-color: #212529;
+}
+#footer #right h1{
+    font-size: 30px;
+    font-family: avanl;
+    color: white;
+}
+.fa{
+    padding: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: white;
+}
+
+.fa:hover{
+    background-color: darkslategray;
+}
+
+.fa-facebook {
+    background: #212529;
+    color: white;
+}
+
+.fa-twitter {
+    background: #212529;
+    color: white;
+}
+
+.fa-google {
+    background: #212529;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #212529;
+    color: white;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .scroll-down {
@@ -239,5 +567,36 @@ html, body{
     #access-bar a{
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+    #l2content1{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    #l2content1 h1{
+        margin: 0px;
+        padding: 0px;
+        font-size: 40px;
+    }
+    
+    #l2content{
+        padding: 5%;
+        left: 5%;
+        width: 80%;
+        height: 80%;
+        bottom: 40%;
+        text-align: center;
+    }
+    .rect{
+        width: 100%;
+        height: 25%;
+    }
+    .rect h1{
+        font-size: 25px;
+        height: 55px;
+    }
+    
+    .rect p{
+        display: none;
     }
 }

@@ -2,6 +2,8 @@
 <head>
     <title>sliding</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="custom.css">
 </head>
     
@@ -18,11 +20,11 @@
     
     <div id="access-bar">
         <span>
-        <a href="#layer1">&#9671;</a>
-        <a href="#layer2">&#9671;</a>
-        <a href="#layer3">&#9671;</a>
-        <a href="#">&#9671;</a>
-        <a href="#">&#9671;</a>
+        <a id="test1" href="#">&#9671;</a>
+        <a id="test2" href="#">&#9671;</a>
+        <a id="test3" href="#">&#9671;</a>
+        <a id="test4" href="#">&#9671;</a>
+        <a id="test5" href="#">&#9671;</a>
         </span>
     </div>
     
@@ -31,13 +33,139 @@
         <h1 id="l1h1">A project is <span>complete </span> when it starts working for you.</h1>
         <!--<div class="scroll-down"><img src="images/down-arrow-red.png"></div>-->
     </div>
-    <div id="layer2">layer2</div>
+    <div id="layer2">
+        <div id="l2content1">
+            <h1>features</h1>
+        </div>
+        <div id="l2content">
+        <div class="rect" id="mobile">
+            <img src="images/mobile.png">
+            <h1>MOBILE COMPATIBLE</h1>
+            <p>As more and more people use their mobile phones to access the Internet, creating a mobile optimized website is a necessity.</p>
+        </div>
+        <div class="rect" id="user">
+            <img src="images/User.png">
+            <h1>USER-FRIENDLY</h1>
+            <p>A user-friendly website should also be accessible to everyone including blind, disabled or the elderly.</p>
+        </div>
+            
+        <div class="rect" id="fast">
+            <img src="images/faster.png">
+            <h1>FAST LOAD TIMES</h1>
+            <p>Nothing is more annoying for website visitors than a website that takes long to load.</p>
+        </div>
+            
+        <div class="rect" id="nav">
+            <img src="images/navigation.png">
+            <h1>EFFECTIVE NAVIGATION</h1>
+            <p>Good navigation is the most important aspects of website usability. Simple HTML or JavaScript menus tend to work best.</p>
+        </div>
+        </div>
+    </div>
     
-    <div id="layer3">layer3</div>
+    <div id="layer3">
+        <div id="l3content1">
+            <h1>our vision</h1>
+        </div>
+        <div id="l3content2">
+            <p><span>Our vision</span> is to expand our current position as a leading Silicon Valley web development company into a nationwide internet solutions company that leads the web development industry in U.S. while providing our clients customized and effective web solutions to achieve clients’ business goal. We value technology innovation, lifelong learning, and adapting to change to achieve operational efficiently in order to provide the best web solutions to our clients. Baytech is committed to providing our clients with continuous, expert web solutions and services to enable you to grow and succeed your business. Our success is dependent on ensuring that all of our clients expand their online presence and enjoy online success. We will excel as a company only after we help our clients’ businesses achieve their business objectives effectively and efficiently.</p>
+        </div>
+    </div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <div id="layer4">
+        <div id="l4content1">
+            <h1>our team</h1>
+        </div>
+        <div id="l4content2">
+            <div id="team-image">
+                <div id="team1">
+                <img src="images/team/1.jpeg">
+                <img src="images/team/2.jpg">
+                </div>
+                <div id="team2">
+                <img src="images/team/4.jpg">
+                <img src="images/team/3.jpg">
+                </div>
+            </div>
+            <div id="team-info">
+                <div id="member1">
+                    <h1>John wick</h1>
+                    <h2>FOUNDER</h2>
+                </div>
+                <div id="member2">
+                    <h1>Natasha</h1>
+                    <h2>CO-FOUNDER</h2>
+                </div>
+                <div id="member3">
+                    <h1>John Doe</h1>
+                    <h2>HIRING MANAGER</h2>
+                </div>
+                <div id="member4">
+                    <h1>Ted</h1>
+                    <h2>GENERAL MANAGER</h2>
+                </div>
+            </div>
+            <div id="next">NEXT</div>
+        </div>
+    </div>
+    
+    <div id="layer5">
+        <form action="#" name="MyForm">
+            <h1>CONTACT US</h1>
+            <hr>
+            <input type="text" name="sname" placeholder="Name">
+            <br>
+            <input type="text" name="email" placeholder="E-mail">
+            <br>
+            <input type="text" name="phone" placeholder="Phone Number">
+            <br>
+            <input type="text" name="message" placeholder="Message">
+            <br>
+            <input id="submit" type="submit" value="SUBMIT">
+        </form>
+        <div id="footer">
+            <div id="left">
+                <h1>LOCATION</h1>
+                <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+            </div>
+            <div id="right">
+                <h1>AROUND THE WEB</h1>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </div>
+    
+    
     
     <script>
+        var lheight=$("#layer2").offset().top;
+        $(window).resize(function(){
+            lheight=$("#layer2").offset().top;
+            console.log(lheight);
+        });
+        
+        $("#test1").css("background-color","black");
+        /*
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            console.log(scroll);
+            if(scroll < lheight){
+                $("#test").css("background-color","black");
+            }
+            else{
+                $("#test").css("background-color","rgba(218,178,57,0.2)");
+            }
+        });*/
+        
+        $("#next").click(function(){
+           $("#team2").fadeToggle(); 
+        $("#member3").fadeToggle(); 
+        $("#member4").fadeToggle(); 
+        });
+        
         function openNav(){
             document.getElementById("nav-bar").style.width="250px";
             document.getElementById("layer1").style.marginLeft = "250px";
@@ -51,6 +179,118 @@
             document.getElementById("l1img").style.animation="l1ImgAnimateb 1s forwards";
             document.getElementById("l1h1").style.animation="l1H1Animateb 1s forwards";
         }
+        var layer=1;
+        
+        //on access bar click
+        $("#test1").click(function(){
+            layer=1;
+            $("html, body").animate({
+                    scrollTop: lheight*(layer-1)
+                    }, 500);
+            //make access bar black on scroll
+            $("#test"+layer).css("background-color","black");
+            for(i=1;i<6;i++){
+                if(i != layer){
+                    $("#test"+i).css("background-color","rgba(218,178,57,0.7)");
+                }
+            }
+        });
+        $("#test2").click(function(){
+            layer=2;
+            $("html, body").animate({
+                    scrollTop: lheight*(layer-1)
+                    }, 500);
+            //make access bar black on scroll
+            $("#test"+layer).css("background-color","black");
+            for(i=1;i<6;i++){
+                if(i != layer){
+                    $("#test"+i).css("background-color","rgba(218,178,57,0.7)");
+                }
+            }
+        });
+        $("#test3").click(function(){
+            layer=3;
+            $("html, body").animate({
+                    scrollTop: lheight*(layer-1)
+                    }, 500);
+            //make access bar black on scroll
+            $("#test"+layer).css("background-color","black");
+            for(i=1;i<6;i++){
+                if(i != layer){
+                    $("#test"+i).css("background-color","rgba(218,178,57,0.7)");
+                }
+            }
+        });
+        
+        $("#test4").click(function(){
+            layer=4;
+            $("html, body").animate({
+                    scrollTop: lheight*(layer-1)
+                    }, 500);
+            //make access bar black on scroll
+            $("#test"+layer).css("background-color","black");
+            for(i=1;i<6;i++){
+                if(i != layer){
+                    $("#test"+i).css("background-color","rgba(218,178,57,0.7)");
+                }
+            }
+        });
+        
+        $("#test5").click(function(){
+            layer=5;
+            $("html, body").animate({
+                    scrollTop: lheight*(layer-1)
+                    }, 500);
+            //make access bar black on scroll
+            $("#test"+layer).css("background-color","black");
+            for(i=1;i<6;i++){
+                if(i != layer){
+                    $("#test"+i).css("background-color","rgba(218,178,57,0.7)");
+                }
+            }
+        });
+        
+        var flag=true;
+        //on scroll
+        $(window).bind('mousewheel', function(event) {
+            event.preventDefault();
+        if(flag){
+            flag=false;    
+            event.preventDefault();
+            if (layer>0 && layer<6){
+                
+                if (event.originalEvent.wheelDelta >= 0 && layer>1 && layer<6) {
+                    $("html, body").animate({
+                    scrollTop: '-='+lheight
+                    }, 500);
+                    layer=layer-1;
+                    //make access bar black on scroll
+                    $("#test"+layer).css("background-color","black");
+                    for(i=1;i<6;i++){
+                        if(i != layer){
+                            $("#test"+i).css("background-color","rgba(218,178,57,0.7)");
+                        }
+                    }
+                }
+                else if(event.originalEvent.wheelDelta < 0 && layer>0 && layer<5){
+                    $("html, body").animate({
+                    scrollTop: '+='+lheight
+                    }, 500);
+                    layer=layer+1;
+                    $("#test"+layer).css("background-color","black");
+                    for(i=1;i<6;i++){
+                        if(i != layer){
+                            $("#test"+i).css("background-color","rgba(218,178,57,0.7)");
+                        }
+                    }
+                }
+                console.log(layer);
+            } 
+            setTimeout(function(){ flag=true; }, 500);
+            console.log("true");
+        }
+        });
+        
         /*
         //smooth scrolling   
         $(document).ready(function(){
