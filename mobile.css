@@ -1,0 +1,164 @@
+@media only screen and (max-width: 768px){
+    #l1img{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #l1h1{
+    margin-top: 20px;
+    width: 100%;
+    }
+    
+    @keyframes l1ImgAnimateb{
+    0%{ margin-top: 50px;
+    margin-left: 17%;}
+    100%{margin-top: 150px;
+    margin-left: 0;}
+    }
+    
+    @keyframes l1H1Animate{
+    0%{ }
+    100%{}
+    }
+    
+    @keyframes l1H1Animateb{
+    0%{}
+    
+    100%{width: 100%;
+    margin-top: 20px;
+    margin-left: 0;}
+    }
+    
+    #access-bar {
+        margin-right: 10px;
+    }
+    #access-bar a{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #l2content1{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    #l2content1 h1{
+        margin: 0px;
+        padding: 0px;
+        font-size: 40px;
+    }
+    
+    #l2content{
+        padding: 5%;
+        left: 5%;
+        width: 90%;
+        height: 85%;
+        bottom: 40%;
+        text-align: center;
+    }
+    .rect{
+        width: 100%;
+        height: 25%;
+    }
+    .rect h1{
+        font-size: 25px;
+        height: 55px;
+    }
+    
+    .rect p{
+        display: none;
+    }
+    
+    #l3content1{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        margin-left: 0;
+    }
+    #l3content1 h1{
+        margin: 0px;
+        padding: 0px;
+        font-size: 40px;
+    }
+    
+    #l3content2{
+        position: relative;
+        left: 5%;
+        bottom: 40%;
+        margin-bottom: -40%;
+        padding: 5%;
+        height: 85%;
+        width: 90%;
+        background-color: white;
+    }
+
+    #l3content2 p{
+        margin-top: 5%;
+        font-family: avanl;
+        font-size: 15px;
+    }
+    
+    #l4content1{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+        margin-left: 0;
+    }
+    #l4content1 h1{
+        margin: 0px;
+        padding: 0px;
+        font-size: 40px;
+    }
+    
+    #l4content2{
+        position: relative;
+        left: 5%;
+        bottom: 40%;
+        margin-bottom: -40%;
+        height: 80%;
+        width: 90%;
+        background-color: white;
+        text-align: center;
+    }
+    
+    .center {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #layer5 form h1{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+
+    #layer5 form input{
+        padding: 10px;
+        margin: 5px;
+        width: 50%;
+        height: 5%;
+        border-radius: 20px;
+    }
+
+    #footer #left{
+        font-size: 10px;
+    }
+
+    #footer #left p{
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    #footer #right{
+        font-size: 10px;
+    }
+    #footer #right h1{
+        font-size: 30px;
+    }
+    .fa{
+        padding: 10px;
+        width: 30px;
+    }
+
+}
